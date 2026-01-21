@@ -64,24 +64,12 @@ export const LibraryPage = ({ onOpenBook }: LibraryPageProps) => {
       <header className="flex-shrink-0 px-6 py-4 border-b border-theme bg-theme-surface">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center p-1 shadow-sm">
-              {/* Mini RSVP logo */}
-              <svg viewBox="0 0 40 40" className="w-full h-full">
-                <rect x="4" y="6" width="10" height="4" rx="2" fill="black"/>
-                <circle cx="18" cy="8" r="2.5" fill="#b91c1c"/>
-                <rect x="22" y="6" width="14" height="4" rx="2" fill="black"/>
-                
-                <rect x="6" y="13" width="8" height="4" rx="2" fill="black"/>
-                <circle cx="18" cy="15" r="2.5" fill="#b91c1c"/>
-                <rect x="22" y="13" width="14" height="4" rx="2" fill="black"/>
-                
-                <rect x="4" y="20" width="12" height="4" rx="2" fill="black"/>
-                <circle cx="18" cy="22" r="2.5" fill="#b91c1c"/>
-                <rect x="22" y="20" width="14" height="4" rx="2" fill="black"/>
-                
-                <rect x="4" y="27" width="32" height="4" rx="2" fill="black"/>
-                <circle cx="18" cy="29" r="2.5" fill="#b91c1c"/>
-              </svg>
+            <div className="w-10 h-10 rounded-lg overflow-hidden shadow-sm">
+              <img 
+                src="/icons/icon-192x192.png" 
+                alt="Fast Ebook Reader" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-theme">Fast Ebook Reader</h1>
